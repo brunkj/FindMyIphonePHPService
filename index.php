@@ -11,6 +11,7 @@
 	
 	// This is where we log in to iCloud
 	try {
+		$fmi = new FindMyiPhone("ICLOUD EMAIL","ICLOUD PASS");
 	} catch (Exception $e) {
 		print "Error: ".$e->getMessage();
 		exit;
@@ -22,6 +23,8 @@
 	// Find a device that is reporting its location and attempt to get its current location
 
 
+        $jasonphone="device ID";
+        $ipadmini="another device ID";
 
 
         switch ($_GET["phone"])
